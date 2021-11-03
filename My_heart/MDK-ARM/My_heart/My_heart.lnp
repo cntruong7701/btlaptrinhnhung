@@ -1,0 +1,25 @@
+--cpu Cortex-M4.fp
+"my_heart\startup_stm32f401xe.o"
+"my_heart\main.o"
+"my_heart\stm32f4xx_it.o"
+"my_heart\stm32f4xx_hal_msp.o"
+"my_heart\stm32f4xx_hal_tim.o"
+"my_heart\stm32f4xx_hal_tim_ex.o"
+"my_heart\stm32f4xx_hal_rcc.o"
+"my_heart\stm32f4xx_hal_rcc_ex.o"
+"my_heart\stm32f4xx_hal_flash.o"
+"my_heart\stm32f4xx_hal_flash_ex.o"
+"my_heart\stm32f4xx_hal_flash_ramfunc.o"
+"my_heart\stm32f4xx_hal_gpio.o"
+"my_heart\stm32f4xx_hal_dma_ex.o"
+"my_heart\stm32f4xx_hal_dma.o"
+"my_heart\stm32f4xx_hal_pwr.o"
+"my_heart\stm32f4xx_hal_pwr_ex.o"
+"my_heart\stm32f4xx_hal_cortex.o"
+"my_heart\stm32f4xx_hal.o"
+"my_heart\stm32f4xx_hal_exti.o"
+"my_heart\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "My_heart\My_heart.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "My_heart.map" -o My_heart\My_heart.axf
